@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: blue;
+    color: white;
+
+    width: 100%;
+    max-width: 500px;
+
+    padding: 20px;
+
+    border-radius: 10px 10px 0 0;
+}
+
+#value {
+    color: white;
+    background-color: blue;
+
+    margin: 10px 0;
+    padding: 10px;
+
+    width: 100%;
+    max-width: 120px;
+
+    height: auto;
+
+    text-align: center;
+    font-size: clamp(24px, 5vw, 40px);
+
+    font-weight: bold;
+    border: 1px solid gray;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#convert-btn {
+    background-color: white;
+    color: black;
+
+    padding: 10px 20px;
+
+    margin: 15px 0;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.divide {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* padding: 10px; */
+
+    margin: 10px 0;
+
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 8px;
+}
+
+.small-title {
+    color: rgb(9,139,231);
+
+    text-align: center;
+    margin: 0;
+}
+
+.resultat {
+    font-size: clamp(12px, 3vw, 16px);
+    text-align: center;
+}
+
+/* Téléphones */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    #convert-btn {
+        width: 100%;
+    }
+
+}
